@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Sử dụng map để chuyển đổi một mảng các số thành một mảng mới chứa chuỗi "even" hoặc "odd" tương ứng với mỗi số.</p>
+</body>
+<script>
+    const numbers = [1, 2, 3, 4, 5];
+    const evenOrOdd = numbers.map(number => {
+        if (number % 2 === 0) {
+            return "even";
+        } else {
+            return "odd";
+        }
+    });
+    console.log(evenOrOdd); // Output: ["odd", "even", "odd", "even", "odd"]
+
+</script>
+</html>

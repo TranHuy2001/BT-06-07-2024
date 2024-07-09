@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Viết một hàm arrow có tên là squareArray, nhận vào một mảng số nguyên và trả về một mảng mới với các phần tử là bình phương của các phần tử trong mảng ban đầu.</p>
+</body>
+
+<script>
+    const squareArray = (numbers) => {
+        const squaredNumbers = [];
+
+        for (const number of numbers) {
+            const squaredNumber = number * number;
+
+            squaredNumbers.push(squaredNumber);
+        }
+        return squaredNumbers
+    }
+
+    const originalNumbers = [1, 2, 3, 4, 5];
+    const squaredNumbers = squareArray(originalNumbers);
+    console.log(squaredNumbers);
+</script>
+</html>

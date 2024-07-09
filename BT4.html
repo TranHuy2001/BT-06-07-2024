@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Viết một hàm arrow có tên là maxInArray, nhận vào một mảng và trả về một giá tại lớn nhất trong mảng ban đầu.</p>
+</body>
+<script>
+    const maxInArray = (numbers) => {
+        // Initialize a variable to store the maximum value
+        let max = numbers[0];
+
+        // Iterate through the array
+        for (const number of numbers) {
+            // Compare each number to the current maximum
+            if (number > max) {
+                max = number;
+            }
+        }
+
+        // Return the maximum value
+        return max;
+    };
+</script>
+</html>

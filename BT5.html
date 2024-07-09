@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Viết một hàm arrow có tên là avgArray, nhận vào một mảng và trả về trung bình các giá trị trong mảng ban đầu.</p>
+</body>
+<script>
+    const avgArray = (numbers) => {
+        // Calculate the total sum of the numbers
+        let sum = 0;
+        for (const number of numbers) {
+            sum += number;
+        }
+
+        // Calculate the average by dividing the sum by the array length
+        const average = sum / numbers.length;
+
+        // Return the average value
+        return average;
+    };
+
+</script>
+</html>

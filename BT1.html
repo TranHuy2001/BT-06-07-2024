@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Viết một hàm arrow có tên là sumArray, nhận vào một mảng số nguyên và trả về tổng của các phần tử trong mảng.</p>
+</body>
+<script>
+    const sumArray = (arr) => {
+        return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    };
+
+    const array = [1,2,3,4,5];
+    console.log(sumArray(array));
+</script>
+</html>

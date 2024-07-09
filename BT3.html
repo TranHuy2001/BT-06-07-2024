@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Viết một hàm arrow có tên là filterGreaterThan, nhận vào một mảng số nguyên và một giá trị nguyên, trả về một mảng mới chứa các phần tử lớn hơn giá trị được đưa vào.</p>
+</body>
+
+<script>
+    const filterGreaterThan = (numbers, threshold) => {
+        const filteredNumbers = [];
+
+        for (const number of numbers) {
+            if (number > threshold) {
+                filteredNumbers.push(number);
+            }
+        }
+
+        return filteredNumbers;
+    }
+
+    const originalNumbers = [1, 4, 2, 5, 3];
+    const filteredNumbers = filterGreaterThan(originalNumbers, 3);
+    console.log(filteredNumbers);
+</script>
+</html>
